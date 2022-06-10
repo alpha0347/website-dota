@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <title>Events</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+  margin: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*------------NAVIGATION--------------*/
+body{
+    margin: 0;
+}
+nav{
+        background-color: rgb(0, 61, 92);
+        color: white;
+        animation: navload 300ms ease-in;
+    }
+    nav ul{
+        margin: 0;
+        display: flex;
+        justify-content: right;
+    }
+    nav li{
+        list-style:none;
+        padding: 10px;
+        margin: 0, 10px;
+        animation: nav-link-load 500ms ease-in;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-delay: 500ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
+    nav li:first-child{
+        animation: nav-first-link-load 500ms;
+        transform: translateX(-0%);
+    }
+    nav li:hover{
+        background-color: #ffffff44;
+    }
+    nav a{
+        color: inherit;
+        text-decoration: none;
+        font-size: 30px;
+        padding-right: 12px;
+    }
+    
+    @keyframes navload{
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes nav-link-load{
+        0% {
+            transform: scale(0);
+        }
+        90% {
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    @keyframes nav-first-link-load{
+        0% {
+            transform: translateX(-1000%);
+        }
+        90% {
+            transform: translateX(50%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+  /*----------------NAV END HEREs-----------------*/
+</style>
+
+<header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Registration</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+  </nav>
+    </header>
+
+<body>
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Vaccination</h2>
+    <li class="w3-padding-16"><b>July</b> 10,2022</li>
+    <li class="w3-padding-16"><b>Brgy. Malingin</b> Covered Court</li>
+    <li class="w3-padding-16"><b>Vaccination</b> for Infant</li>
+    <li class="w3-padding-16"><b>8:00am-10:00am</b> only</li>
+    <li class="w3-padding-16">
+    <h2 class="w3-wide">Click to See Details</h2>
+    <span class="w3-opacity"></span>
+
+    <button class="w3-button w3-black w3-padding-large"><a href="">Details</a></button>
+    
+    
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2></h2>
+    
+    <h2 class="w3-wide">Feeding Program</h2>
+    <li class="w3-padding-16"><b>May</b> 10,2022</li>
+    <li class="w3-padding-16"><b>Brgy. Malingin</b> Covered Court</li>
+    <li class="w3-padding-16"><b>Feeding Program</b> for children</li>
+    <li class="w3-padding-16"><b>7:30am-10:00am</b> only</li>
+    <h2 class="w3-wide">Click to See Details</h2>
+  </br>
+    <button class="w3-button w3-black w3-padding-large"><a href="">Details</a></button>
+
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Medical Mission</h2>
+    <li class="w3-red w3-xlarge w3-padding-48">Medical Mission</li>
+    <li class="w3-padding-16"><b>November</b> 20,2022</li>
+    <li class="w3-padding-16"><b>Brgy. Malingin</b> Covered Court</li>
+    <li class="w3-padding-16"><b>Blood Letting</b> for ages 17-35</li>
+    <li class="w3-padding-16"><b>8:30am-3:00pm</b> only</li>
+    <h2 class="w3-wide">Click to See Details</h2>
+    <br>
+    <button class="w3-button w3-black w3-padding-large"><a href="">Details</a></button>
+  </div>
+</div>
+
+</body>
+</html>

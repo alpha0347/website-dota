@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+    <style>
+
+
+
+
+        /*------------NAV----------*/
+
+        body{
+            margin: 0;
+            background: whitesmoke fixed center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        nav {
+            background-color: rgb(0, 61, 92);
+            color: white;
+            animation: navload 300ms ease-in;
+        }
+        nav ul{
+            margin: 0;
+            display: flex;
+            justify-content: right;
+        }
+        nav li{
+            list-style: none;
+            padding: 10px;
+            margin: 0, 10px;
+        }
+        nav li:hover{
+            background-color: #ffffff44;
+        }
+        nav a{
+            color: inherit;
+            text-decoration: none;
+            font-size: 30px;
+            padding-right: 12px;
+        }
+/* --------------------DONE LOGIN---------------------- */
+
+.open-button {
+  background-color: rgb(33, 209, 17);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 10px;
+  right: 28px;
+  width: 280px;
+}
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 215px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: gray;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 4px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* --------------------DONE LOGIN---------------------- */
+/*---------------------Button Start---------------------*/
+
+.getstart{
+  background-color: lime;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-top: 30px;
+  width: 250px;
+}
+/*------------------Message Contents---------------------*/
+
+.msgcont{
+  top: 0px;
+  
+}
+.titlepage{
+  color: black;
+  margin-top: 60px;
+}
+.greetings{
+  font-size: 80px;
+  color: red;
+  
+}
+
+
+    </style>
+    <title>
+          Get Started!
+    </title>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#login" onclick="openForm()"><i class="fa fa-user"></i> LOGIN</a></li>
+                </ul>
+            </nav>
+                    <!--  --------------------DONE LOGIN---------------------- -->
+    
+
+    
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login to Admin Panel</h1>
+
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn"><a href="record.html">Login</a></button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<!--  --------------------DONE LOGIN---------------------- -->
+
+<div align="center" class="msgcont">
+  <h2 class="greetings" >Welcome!</h2>
+      <h1 class="titlepage"><font size="30">Barangay Malingin<br>Online Health Care Service<br>and<br>Record Management System</font></h1>
+  </div>
+
+<div align="center">
+  <a href="index.html" style="text-decoration: none" style="color:#ffff"><button class="getstart"><font size="5"><b>Get Started!</b></font></button></a>
+</div>            
+        </header>
+        
+
+
+
+    </body>
+
+
+
+
+
+</html>

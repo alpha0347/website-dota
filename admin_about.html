@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<style>
+body{
+    margin: 0;
+    background-color: whitesmoke;
+}
+nav{
+    background-color: rgb(0, 61, 92);
+    color: white;
+    animation: navload 300ms ease-in;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+nav li{
+    list-style:none;
+    padding: 10px;
+    margin: 0, 10px;
+    animation: nav-link-load 500ms ease-in;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+nav li:first-child{
+    animation: nav-first-link-load 500ms;
+    transform: translateX(-0%);
+}
+nav li:hover{
+    background-color: #ffffff44;
+}
+nav a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 30px;
+    padding-right: 12px;
+}
+main{
+    padding: 30px;
+}
+@keyframes navload{
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes nav-link-load{
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes nav-first-link-load{
+    0% {
+        transform: translateX(-1000%);
+    }
+    90% {
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+/*---nav bar end---*/
+
+
+
+/*--------label form---------*/
+.programmers{
+            width:600px;
+            background-color:rgb(0, 0, 0, 6);
+            margin:auto;
+            color:#ffffff;
+            padding:10px 0px 10px 0px;
+            text-align:center;
+            border-radius:15px 15px 0px 0px;
+        }
+.main{
+            background-color:rgb(0, 0, 0, 0.5);
+            width:600px;
+            margin:auto;
+
+        }
+form{
+            padding:5px;
+            
+        }
+#name{
+            width:100%;
+            height:170px;
+            
+}
+
+.namesprog{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+</style>
+<title>ADMIN-About</title>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="admin_homepage.html">Home</a></li>
+            <li><a href="admin_record.html">Records</a></li>
+            <li><a href="admin_events.html">Events</a></li>
+            <li><a href="admin_sms.html">Create SMS</a></li>
+            <li><a href="admin_about.html">About</a></li>
+            <li><a href="homepage.html">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <br>
+    <div align="center">
+        <h1>About the System</h1>
+        <p style="font-size: 25px;">This system manages the medical records,<br>online 
+            appointment, update of events and health related programs of<br>Brgy. Malingin Bago City.</p>
+    </div>
+    <div align="center"><br>
+        <p style="font-size: 20px;">Only The Authorized Personnel Can Use This System</p>
+    </div>
+
+
+    <div class="programmers"><h1><u>The Developers</u></h1></div>
+    <div class="main">
+        <form>
+            <div id="name">
+            <div class="namesprog">
+                <h3 class="romar" >Romar Rosquillo</h3>
+                <img src="cap.png" width="60">
+                
+                <h3 class="cyron">Cyron Jwayne Panganiban</h3>
+                <img src="punish.png" width="60">
+            </div>
+            <div class="namesprog">
+                <h3 class="irish">Irish Mike Bosil</h3>
+                <img src="star.png" width="60">
+
+                <h3 class="elyza">Elyza Trojillo</h3>
+                <img src="valkyrie.png" width="60">
+            </div>
+</div>
+</div>
+
+            
+        </form>
+    </div>
+</body>
+</html>

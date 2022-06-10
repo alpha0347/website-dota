@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<style>
+    .mydiv{
+        border: 5px outset black;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        margin-top: 100px;
+        margin-left: 150px;
+        margin-right: 150px;
+        color: whitesmoke;
+    }
+    body{
+        margin: 0;
+    }
+    nav{
+        background-color: rgb(0, 61, 92);
+        color: white;
+        animation: navload 300ms ease-in;
+    }
+    nav ul{
+        margin: 0;
+        display: flex;
+        justify-content: right;
+    }
+    nav li{
+        list-style:none;
+        padding: 10px;
+        margin: 0, 10px;
+        animation: nav-link-load 500ms ease-in;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+        animation-delay: 500ms;
+        animation-fill-mode: forwards;
+        transform: scale(0);
+    }
+    nav li:first-child{
+        animation: nav-first-link-load 500ms;
+        transform: translateX(-0%);
+    }
+    nav li:hover{
+        background-color: #ffffff44;
+    }
+    nav a{
+        color: inherit;
+        text-decoration: none;
+        font-size: 30px;
+        padding-right: 12px;
+    }
+    main{
+        padding: 30px;
+    }
+    @keyframes navload{
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes nav-link-load{
+        0% {
+            transform: scale(0);
+        }
+        90% {
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    @keyframes nav-first-link-load{
+        0% {
+            transform: translateX(-1000%);
+        }
+        90% {
+            transform: translateX(50%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+</style>
+<title>BRGY.MALINGINHEALTHCENTER</title>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="mydiv">     
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugiat quo fugit nostrum 
+            quos architecto sequi vitae consequatur iste aliquam, neque ratione dolorem consectetur. Animi,
+             inventore vitae! Pariatur eum in neque? Deleniti omnis voluptatem, maxime ab ipsa voluptatum quasi 
+             ipsam. Neque, amet excepturi voluptatem suscipit doloribus, animi eos quod omnis impedit perferendis 
+             accusamus voluptatibus. Sit explicabo debitis earum enim, voluptatem beatae dolor officiis sed provident 
+             recusandae perspiciatis! Ea consequuntur minus itaque delectus. Excepturi odit ad eaque earum cupiditate 
+             saepe corrupti?.</h1>
+</div>
+<main>
+    <section>
+        <article>
+            <p style="font-size:30px">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex accusantium quae quibusdam expedita. 
+            Quaerat modi neque repellendus illo, magni architecto fugit dolorum ipsam ab atque consequuntur nostrum tempora nesciunt 
+            labore, quibusdam perspiciatis vero similique sit praesentium. Pariatur, perspiciatis quae deserunt accusantium architecto 
+            distinctio sed asperiores optio nam dolorem vero tempora?</p>
+        </article>
+    </section>
+</main> 
+
+</body>
+</html>
